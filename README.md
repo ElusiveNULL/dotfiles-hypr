@@ -7,7 +7,7 @@ Contains install script for Arch Linux.
 
 Dependencies (installed by script):
 	
-	[AUR] swaylock (Lock screen client)
+	[AUR] swww (Lock screen client)
 	
 	[AUR] hyprland (Tiling window manager)
 
@@ -39,3 +39,4 @@ To install for Arch Linux, run the installation script (`./install-arch.sh`). Fo
 CREDITS:
 
 https://github.com/linuxmobile/hyprland-dots (Wezterm configuration)
+https://github.com/PROxZIMA/.dotfiles/ (Script for swww)

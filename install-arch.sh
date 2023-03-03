@@ -8,7 +8,6 @@ fi
 # Install dotfiles
 mkdir ~/.config 2>/dev/null
 cp -r .config/* ~/.config/
-cp -r Pictures ~/
 
 install_aur () {
 	if sudo pacman -Q | grep -q $1 ; then
@@ -39,7 +38,7 @@ case $yn in
 esac
 done
 
-install_aur swaylock
+install_aur swww
 install_aur waybar-hyprland
 install_aur rofi-lbonn-wayland
 install_aur fastfetch
