@@ -39,7 +39,7 @@ esac
 done
 
 install_aur swww
-install_aur waybar-hyprland
+install_aur waybar-hyprland-git
 install_aur rofi-lbonn-wayland
 install_aur fastfetch
 

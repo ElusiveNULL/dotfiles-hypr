@@ -9,7 +9,7 @@ Dotfiles for a dark ocean theme for Hyprland with an install script for Arch Lin
 	
 	[AUR] hyprland (Tiling window manager)
 
-	[AUR] waybar-hyprland (Bar for Hyprland)
+	[AUR] waybar-hyprland-git (Bar for Hyprland)
 
 	[AUR] rofi-lbonn-wayland (Rofi fork for wayland)
 

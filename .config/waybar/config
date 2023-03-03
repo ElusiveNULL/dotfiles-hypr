@@ -1,8 +1,8 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 24,
-    "modules-left": ["wlr/workspaces", "sway/mode", "sway/window"],
+    "height": 30,
+    "modules-left": ["wlr/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["tray", "pulseaudio", "backlight", "temperature", "cpu", "memory", "battery", "network", "custom/powermenu"],
     "sway/mode": {
