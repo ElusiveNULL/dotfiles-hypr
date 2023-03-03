@@ -18,13 +18,13 @@ install_aur () {
 		git clone https://aur.archlinux.org/$1.git
 		cd $1
 		makepkg -si
-		cd ~/misc
-		rm clone -rf
+		cd ~/
+		rm misc/ -rf
 	fi
 }
 
 # Install dependencies
-sudo pacman -S alacritty wezterm firefox vim ttf-iosevka-nerd swaybg base-devel sddm --needed
+sudo pacman -S alacritty wezterm firefox vim ttf-iosevka-nerd base-devel sddm --needed
 
 # Install AUR packages
 while true; do
