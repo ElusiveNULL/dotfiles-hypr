@@ -5,7 +5,7 @@ Dotfiles for a dark ocean theme for Hyprland with an install script for Arch Lin
 
 ### Dependencies (installed by script)
 	
-	[AUR] swww (Lock screen client)
+	[AUR] swww (Wallpaper client)
 	
 	[AUR] hyprland (Tiling window manager)
 
@@ -26,8 +26,6 @@ Dotfiles for a dark ocean theme for Hyprland with an install script for Arch Lin
 	vim (Text editor)
 
 	ttf-iosevka-nerd (Terminal font)
-
-	swaybg (Wallpaper client)
 
 ### Instructions
 
