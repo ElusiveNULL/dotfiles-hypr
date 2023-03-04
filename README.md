@@ -36,4 +36,4 @@ To install for Arch Linux, run the installation script (`./install-arch.sh`). Fo
 
 https://github.com/linuxmobile/hyprland-dots (Wezterm configuration)
 
-https://github.com/PROxZIMA/.dotfiles/ (Script for swww)
+https://github.com/flick0/dotfiles/tree/aurora/config (Waybar config minus colors, scripts for Hyprland) 
