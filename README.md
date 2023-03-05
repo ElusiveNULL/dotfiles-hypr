@@ -11,7 +11,7 @@ Dotfiles for a dark ocean theme for Hyprland with an install script for Arch Lin
 
 	[AUR] waybar-hyprland-git (Bar for Hyprland)
 
-	[AUR] rofi-lbonn-wayland (Rofi fork for wayland)
+	[AUR] wofi (App launcher)
 
 	[AUR] fastfetch (Fetch tool)
 
