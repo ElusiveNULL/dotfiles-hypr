@@ -10,10 +10,9 @@
     "margin-bottom":-11,
     //"margin-top":5,
     "modules-left": ["wlr/workspaces"],
-    "modules-right": ["tray","battery","custom/ss","custom/expand","cpu","clock"],
-    "modules-center": ["custom/dynamic_pill"],
+    "modules-right": ["battery","cpu","clock"],
+    "modules-center": ["hyprland/window"],
     // Modules configuration
-
 
     // custom modules ////////////////
     "custom/ss":{
@@ -27,10 +26,9 @@
         // "interval": 1,
         "on-click": "~/.config/hypr/scripts/expand cycle"
     },
-    "custom/expand":{
-        "on-click":"~/.config/hypr/scripts/expand_toolbar",
-        "format":"{}",
-        "exec":"~/.config/hypr/scripts/expand arrow-icon"
+
+    "hyprland/window": {
+        "format": "{}"
     },
     // "custom/waybar-mpris": {
     //     "return-type": "json",
@@ -112,8 +110,7 @@
     },
     "cpu": {
         "interval":1,
-        "format": "{icon0} {icon1} {icon2} {icon3}",
-        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+        "format": " {usage}%",
     },
     "memory": {
         "format": "{}% "
@@ -127,7 +124,7 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
+        "format": "{icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {

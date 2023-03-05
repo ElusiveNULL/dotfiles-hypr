@@ -1,6 +1,6 @@
 * {
-    font-family: CartographCF Nerd Font,FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-family: Cantarell VF,CartographCF Nerd Font,FontAwesome, sans-serif;
+    font-size: 14px;
 }
 
 window#waybar {
@@ -9,34 +9,34 @@ window#waybar {
 
 #workspaces{
     background-color: transparent;
+    color: #51e8ae;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 25px;
 }
 #workspaces button{
-    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
-    background-color: #fff ;
+    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
+    background-color: rgba(10,44,94,0.8);
     border-radius: 15px;
     margin-right: 10px;
     padding-top: 4px;
     padding-bottom: 2px;
     padding-right: 10px;
     font-weight: bolder;
-    color: 	#061b7a ;
+    color: 	#51e8ae ;
 }
 
 #workspaces button.active{
     padding-right: 20px;
-    box-shadow: rgba(0, 0, 0, 0.288) 2 2 5 2px;
+    box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
     padding-left: 20px;
     padding-bottom: 3px;
-    background: rgb(73,71,179);
-    background: linear-gradient(40deg, rgba(10,52,94,1) 0%, rgba(9,42,82,1) 43%, rgba(0,48,99,1) 80%, rgba(6,39,74,1) 100%); 
+    background: #0a345e;
     background-size: 300% 300%;
     animation: gradient 4s ease infinite;
-    color: #fff;
+    color: #51e8ae;
 }
 
 @keyframes gradient {
@@ -73,60 +73,56 @@ window#waybar {
     padding: 0 10px;
     border-radius: 15px;
     background-color: #0a345e;
-    color: #68edba;
-    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+    color: #51e8ae;
+    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
 }
 
 #custom-dynamic_pill.low{
-    background: rgb(148,226,213);
-    background: linear-gradient(52deg, rgba(148,226,213,1) 0%, rgba(137,220,235,1) 19%, rgba(116,199,236,1) 43%, rgba(137,180,250,1) 56%, rgba(180,190,254,1) 80%, rgba(186,187,241,1) 100%); 
+    background: #0a345e;
     background-size: 300% 300%;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
     animation: gradient 10s ease infinite;
     font-weight: bolder;
-    color: #fff;
+    color: #51e8ae;
 }
 #custom-dynamic_pill.normal{
-    background: rgb(26,97,138);
-    background: linear-gradient(52deg, rgba(166,209,137,1) 0%, rgba(166,227,161,1) 26%, rgba(148,226,213,1) 65%, rgba(129,200,190,1) 100%); 
+    background: #0a345e;
     background-size: 300% 300%;
     animation: gradient 15s ease infinite;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
     font-weight: bolder;
-    color: #fff;
+    color: #51e8ae;
 }
 #custom-dynamic_pill.critical{
-    background: rgb(212,36,65);
-    background: linear-gradient(52deg, rgba(235,160,172,1) 0%, rgba(243,139,168,1) 30%, rgba(231,130,132,1) 48%, rgba(250,179,135,1) 77%, rgba(249,226,175,1) 100%); 
+    background: #0a345e;
     background-size: 300% 300%;
     animation: gradient 15s ease infinite;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
     font-weight: bolder;
-    color: #fff;
+    color: #51e8ae;
 }
 
 
 #custom-dynamic_pill.playing{
-    background: rgb(249,226,175);
-    background: linear-gradient(45deg, rgba(249,226,175,1) 0%, rgba(245,194,231,1) 20%, rgba(180,190,254,1) 100%); 
+    background: #0a345e;
     background-size: 300% 300%;
     animation: gradient 15s ease infinite;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
     font-weight: 900;
-    color: #fff ;
+    color: #51e8ae ;
 }
 #custom-dynamic_pill.paused{
-    background: #fff ;
+    background: #0a345e;
     font-weight: bolder;
-    color: #b4befe;
+    color: #51e8ae;
 }
 
 #custom-ss{
     background: #0a345e;
-    color: rgba(104,237,186,1);
+    color: #51e8ae;
     font-weight:  bolder;
     padding: 0px;
     padding-left: 10px;
@@ -135,9 +131,8 @@ window#waybar {
 }
 
 #custom-cycle_wall{
-    background: rgb(10,50,90);
-    background: linear-gradient(45deg, rgba(245,194,231,1) 0%, rgba(203,166,247,1) 0%, rgba(243,139,168,1) 13%, rgba(235,160,172,1) 26%, rgba(250,179,135,1) 34%, rgba(249,226,175,1) 49%, rgba(166,227,161,1) 65%, rgba(148,226,213,1) 77%, rgba(137,220,235,1) 82%, rgba(116,199,236,1) 88%, rgba(137,180,250,1) 95%); 
-    color: #fff;
+    background: #0a345e;
+    color: #51e8ae;
     background-size: 500% 500%;
     animation: gradient 7s linear infinite;
     font-weight:  bolder;
@@ -147,15 +142,13 @@ window#waybar {
 
 
 #clock {
-    background: rgb(10,50,90);
-    background: linear-gradient(45deg, rgba(10,50,90,1) 0%, rgba(24,52,99,1) 64%, rgba(6,70,92,1) 100%); 
+    background: #0a345e;
     margin-right: 25px;
-    color: #fff ;
+    color: #51e8ae ;
     background-size: 300% 300%;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
-    animation: gradient 7s ease infinite;
-    font-size: 15px;
-    padding-top: 5px;
+    font-size: 15.5px;
+    padding-top: 1px;
     padding-right: 21px;
     font-weight: bolder;
     padding-left: 20px
@@ -167,7 +160,7 @@ window#waybar {
 
 #battery {
     background-color: #0a345e;
-    color: #68edba;
+    color: #51e8ae;
     font-weight: bolder;
     font-size: 20px;
     padding-left: 15px;
@@ -176,13 +169,13 @@ window#waybar {
 
 @keyframes blink {
     to {
-        background-color: #f9e2af;
-        color:#96804e;
+        background-color: #0a345e;
+        color: #51e8ae;
     }
 }
 
 #battery.critical:not(.charging) {
-    background-color:  #f38ba8;
+    background-color:  #51e8ae;
     color:#bf5673;
     animation-name: blink;
     animation-duration: 0.5s;
@@ -196,62 +189,57 @@ label:focus {
 }
 
 #cpu {
-    background: rgb(180,190,254);
-    background: linear-gradient(52deg, rgba(180,190,254,1) 0%, rgba(137,220,235,1) 32%, rgba(137,180,250,1) 72%, rgba(166,227,161,1) 100%); 
-    background-size: 300% 300%;
-    animation: gradient 20s ease infinite;
+    background: #0a345e;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
-    /* background-color: #b4befe; */
-    color: 	#fff;
+    color: #51e8ae;
 }
 
 #memory {
-    background-color: #cba6f7;
-    color: 	#9a75c7;
+    background-color: #0a345e;
+    color: #51e8ae;
     font-weight: bolder;
 }
 
 #disk {
-    color: #964B00;
+    color: #51e8ae;
 }
 
 #backlight {
-    color: #90b1b1;
+    color: #51e8ae;
 }
 
 #network{
-    color:#000;
+    color:#51e8ae;
 }
 
 #network.disabled{
-    background-color: #45475a;
+    background-color: #0a345e;
 }
 
 #network.disconnected{
-    background: rgb(243,139,168);
-    background: linear-gradient(45deg, rgba(243,139,168,1) 0%, rgba(250,179,135,1) 100%); 
-    color: #fff;
+    background: #0a345e;
+    color: #b32940;
     font-weight: bolder;
     padding-top: 3px;
     padding-right: 11px;
 }
 
 #network.linked, #network.wifi{
-    background-color: #a6e3a1 ;
+    background-color: #0a345e ;
 }
 
 #network.ethernet{
-    background-color:#f9e2af ;
+    background-color:#0a345e ;
 }
 
 #pulseaudio {
-    background-color:  	#fab387;
-    color: #bf7d54;
+    background-color: #0a345e;
+    color: #51e8ae;
     font-weight: bolder;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
+    background-color: #0a345e;
 }
 
 #custom-media {
@@ -259,74 +247,74 @@ label:focus {
 }
 
 #custom-media.custom-spotify {
-    background-color: #66cc99;
+    background-color: #0a345e;
 }
 
 #custom-media.custom-vlc {
-    background-color: #ffa000;
+    background-color: #0a345e;
 }
 
 #temperature {
-    background-color: #f9e2af;
+    background-color: #0a345e;
     color: #96804e;
 }
 
 #temperature.critical {
-    background-color: #f38ba8 ;
+    background-color: #0a345e ;
     color: #bf5673;
 }
 
 #tray {
     background-color: #0a345e;
-    color: #68edba;
+    color: #51e8ae;
 }
 
 #tray > .passive {
     -gtk-icon-effect: highlight;
-    color: #68edba;
+    color: #51e8ae;
 }
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+    background-color: #b32940;
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+    background-color: #0a345e;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
+    background-color: #0a345e;
     color: #2d3436;
 }
 
 #mpd {
-    background-color: #66cc99;
+    background-color: #0a345e;
     color: #2a5c45;
 }
 
 #mpd.disconnected {
-    background-color: #f53c3c;
+    background-color: #0a345e;
 }
 
 #mpd.stopped {
-    background-color: #90b1b1;
+    background-color: #0a345e;
 }
 
 #mpd.paused {
-    background-color: #51a37a;
+    background-color: #0a345e;
 }
 
 #language {
-    background: #00b093;
-    color: #68edba;
+    background: #0a345e;
+    color: #51e8ae;
     padding: 0 5px;
     margin: 0 5px;
     min-width: 16px;
 }
 
 #keyboard-state {
-    background: #97e1ad;
+    background: #0a345e;
     color: #000000;
     padding: 0 0px;
     margin: 0 5px;
