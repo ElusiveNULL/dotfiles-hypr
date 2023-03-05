@@ -17,8 +17,6 @@ Dotfiles for a dark ocean theme for Hyprland with an install script for Arch Lin
 
 	sddm (Display manager)
 
-	alacritty (Terminal emulator)
-
 	wezterm (Terminal emulator)
 
 	firefox (Browser)
