@@ -24,7 +24,8 @@ install_aur () {
 }
 
 # Install dependencies
-sudo pacman -S wezterm firefox vim ttf-iosevka-nerd base-devel sddm dunst --needed
+sudo pacman -S wezterm firefox vim ttf-iosevka-nerd base-devel sddm dunst ttf-font-awesome cantarell-fonts --needed
+sudo systemctl enable sddm
 
 # Install AUR packages
 while true; do
