@@ -5,12 +5,14 @@ local function font_with_fallback(name, params)
 	return wezterm.font_with_fallback(names, params)
 end
 
+font_name = "Noto Color Emoji"
 
 return {
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
 
 	color_scheme = 'Dracula',
+
 
 	-- Font config
 	font = font_with_fallback(font_name),
@@ -62,22 +64,22 @@ return {
 			action = wezterm.action({ CloseCurrentPane = { confirm = false } }),
 		},
 		{
-			key = "h",
+			key = "LeftArrow",
 			mods = "CTRL|SHIFT",
 			action = wezterm.action({ ActivatePaneDirection = "Left" }),
 		},
 		{
-			key = "l",
+			key = "RightArrow",
 			mods = "CTRL|SHIFT",
 			action = wezterm.action({ ActivatePaneDirection = "Right" }),
 		},
 		{
-			key = "k",
+			key = "UpArrow",
 			mods = "CTRL|SHIFT",
 			action = wezterm.action({ ActivatePaneDirection = "Up" }),
 		},
 		{
-			key = "j",
+			key = "DownArrow",
 			mods = "CTRL|SHIFT",
 			action = wezterm.action({ ActivatePaneDirection = "Down" }),
 		},
@@ -152,12 +154,12 @@ return {
 	enable_tab_bar = true,
 	hide_tab_bar_if_only_one_tab = true,
 	show_tab_index_in_tab_bar = false,
-	tab_bar_at_bottom = true,
+	tab_bar_at_bottom = false,
 
 	-- General
 	automatically_reload_config = true,
 	inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
-	window_background_opacity = 0.75,
+	window_background_opacity = 0.6,
 	window_close_confirmation = "NeverPrompt",
   window_frame = { active_titlebar_bg = "#45475a", font = font_with_fallback(font_name, { bold = true }) },
 }

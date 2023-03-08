@@ -10,8 +10,8 @@
     "margin-bottom":-11,
     //"margin-top":5,
     "modules-left": ["wlr/workspaces"],
-    "modules-right": ["battery","cpu","clock"],
-    "modules-center": ["hyprland/window"],
+    "modules-right": ["pulseaudio","battery","cpu","clock"],
+    "modules-center": [""],
     // Modules configuration
 
     // custom modules ////////////////
@@ -28,7 +28,8 @@
     },
 
     "hyprland/window": {
-        "format": "{}"
+    	"format": "{}",
+    	"separate-outputs": false
     },
     // "custom/waybar-mpris": {
     //     "return-type": "json",
@@ -117,10 +118,10 @@
     },
     "temperature": {
         // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
         "critical-threshold": 80,
         "format-critical": "{temperatureC}°C",
-        "format": ""
+        "format": "{temperatureC}°C"
     },
     "backlight": {
         // "device": "acpi_video1",
@@ -130,7 +131,7 @@
     "battery": {
         "states": {
             "warning": 50,
-            "critical": 20
+            "critical": 10
         },
         "format": "{icon}",
         "format-charging": "",
@@ -153,17 +154,13 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{format_source}",
+        "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-muted": "Mute",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
