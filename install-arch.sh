@@ -24,7 +24,7 @@ install_aur () {
 }
 
 # Install dependencies
-sudo pacman -S wezterm firefox vim ttf-iosevka-nerd base-devel sddm dunst ttf-font-awesome cantarell-fonts pulseaudio-alsa pavucontrol ---needed
+sudo pacman -S wezterm firefox vim ttf-iosevka-nerd base-devel sddm dunst ttf-font-awesome cantarell-fonts pulseaudio-alsa pavucontrol swaylockd --needed
 sudo systemctl enable sddm
 
 # Install AUR packages
@@ -43,6 +43,7 @@ install_aur swww
 install_aur waybar-hyprland-git
 install_aur wofi
 install_aur fastfetch
+install_aur swaylock-effects-git
 
 # Finish
 echo "Installation complete."
