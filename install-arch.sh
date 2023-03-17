@@ -31,9 +31,9 @@ sudo systemctl enable sddm
 while true; do
 read -p "Are you using Nvidia? (y/n) " yn
 case $yn in
-	y ) install_aur hyprland-nvidia;
+	y ) install_aur hyprland-nvidia-git;
 		break;;
-	n ) install_aur hyprland;
+	n ) install_aur hyprland-git;
 		break;;
 	* ) echo "Invalid response.";;
 esac
