@@ -1,7 +1,7 @@
 # dotfiles-hypr
 Dotfiles for a dark ocean theme for Hyprland with an install script for Arch Linux.
 
-![Screenshot](oceanrice.png)
+![Screenshot](screenshot.png)
 
 ### Instructions
 
