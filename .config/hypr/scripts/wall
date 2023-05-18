@@ -1,3 +1,18 @@
 #!/usr/bin/bash
+# Scripts written by Flick0 and edited by JJ Shep
+TEMP=/tmp/current_wall
+
+files=(~/.config/hypr/wallpapers/*)
+
+hypr=~/.config/hypr
+scripts=$hypr/scripts
+
+index=$(cat $TEMP)
+index=$((index+1))
+if [ $index -ge ${#files[@]} ]; then
+    index=0
+fi
+echo $index > $TEMP
 swww init
-swww img $1 --transition-type grow --transition-duration 2.4
+swww img "${files[$index]}" --transition-type grow --transition-pos 1920,1080 --transition-duration 3
+sleep 0.1

@@ -11,8 +11,9 @@ dunst &
 waybar &
 
 # wallpaper
-$scripts/wall $config/wallpapers/water.png &
 
 # other
-/usr/lib/polkit-kde-authentication-agent-1 &
+/usr/lib/polkit-gnome/polkit-kde-authentication-agent-1 &
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
+sleep 1
+$scripts/wall $config/wallpapers/catalina-night.jpg &

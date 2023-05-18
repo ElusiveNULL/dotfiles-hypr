@@ -1,6 +1,6 @@
 * {
     font-family: Cantarell VF,CartographCF Nerd Font,FontAwesome, sans-serif;
-    font-size: 14px;
+    font-size: 19px;
 }
 
 window#waybar {
@@ -18,7 +18,7 @@ window#waybar {
 #workspaces button{
     box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
     background-color: rgba(10,44,94,0.8);
-    border-radius: 15px;
+    border-radius: 20px;
     margin-right: 10px;
     padding-top: 4px;
     padding-bottom: 2px;
@@ -55,7 +55,6 @@ window#waybar {
 #clock,
 #battery,
 #cpu,
-#hyprland-window,
 #memory,
 #disk,
 #temperature,
@@ -66,10 +65,7 @@ window#waybar {
 #tray,
 #mode,
 #idle_inhibitor,
-#custom-expand,
 #custom-cycle_wall,
-#custom-ss,
-#custom-dynamic_pill,
 #mpd {
     padding: 0 10px;
     border-radius: 15px;
@@ -81,74 +77,13 @@ window#waybar {
     margin-right: 10px;
 }
 
-#custom-dynamic_pill.low{
-    background: #0a345e;
-    background-size: 300% 300%;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
-    animation: gradient 10s ease infinite;
-    font-weight: bolder;
-    color: #51e8ae;
-}
-#custom-dynamic_pill.normal{
-    background: #0a345e;
-    background-size: 300% 300%;
-    animation: gradient 15s ease infinite;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
-    font-weight: bolder;
-    color: #51e8ae;
-}
-#custom-dynamic_pill.critical{
-    background: #0a345e;
-    background-size: 300% 300%;
-    animation: gradient 15s ease infinite;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
-    font-weight: bolder;
-    color: #51e8ae;
-}
-
-
-#custom-dynamic_pill.playing{
-    background: #0a345e;
-    background-size: 300% 300%;
-    animation: gradient 15s ease infinite;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
-    font-weight: 900;
-    color: #51e8ae ;
-}
-#custom-dynamic_pill.paused{
-    background: #0a345e;
-    font-weight: bolder;
-    color: #51e8ae;
-}
-
-#custom-ss{
-    background: #0a345e;
-    color: #51e8ae;
-    font-weight:  bolder;
-    padding: 0px;
-    padding-left: 10px;
-    padding-right: 15px;
-    border-radius: 15px;
-}
-
-#custom-cycle_wall{
-    background: #0a345e;
-    color: #51e8ae;
-    background-size: 500% 500%;
-    animation: gradient 7s linear infinite;
-    font-weight:  bolder;
-    padding: 5px;
-    border-radius: 15px;
-}
-
-
 #clock {
     background: #0a345e;
     margin-right: 25px;
+    border-radius: 20px;
     color: #51e8ae ;
     background-size: 300% 300%;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
-    font-size: 15.5px;
     padding-top: 1px;
     padding-right: 21px;
     font-weight: bolder;
@@ -157,13 +92,15 @@ window#waybar {
 
 #battery.charging, #battery.plugged {
     background-color: #0a345e;
+    border-radius: 20px;
 }
 
 #battery {
+    font-size: 18px;
     background-color: #0a345e;
+    border-radius: 20px;
     color: #51e8ae;
-    font-weight: bolder;
-    font-size: 20px;
+    font-weight: bold;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -179,7 +116,7 @@ window#waybar {
     background-color:  #51e8ae;
     color:#bf5673;
     animation-name: blink;
-    animation-duration: 0.5s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -190,21 +127,19 @@ label:focus {
 }
 
 #cpu {
-    background: #0a345e;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
-    color: #51e8ae;
-}
-
-#hyprland-window {
+    font-weight: bold;
+    border-radius: 20px;
     background: #0a345e;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
     color: #51e8ae;
 }
 
 #memory {
-    background-color: #0a345e;
+    font-weight: bold;
+    border-radius: 20px;
+    background: #0a345e;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
     color: #51e8ae;
-    font-weight: bolder;
 }
 
 #disk {
@@ -240,12 +175,15 @@ label:focus {
 }
 
 #pulseaudio {
+    border-radius: 20px;
     background-color: #0a345e;
     color: #51e8ae;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 #pulseaudio.muted {
+    font-size: 17px;
+    border-radius: 20px;
     background-color: #0a345e;
 }
 
@@ -334,4 +272,18 @@ label:focus {
 
 #keyboard-state > label.locked {
     background: rgba(0, 0, 0, 0.2);
+}
+
+#window {
+  color: #51e8ae;
+  border-radius: 30;
+  background: #0a345e;
+  margin: 0px;
+  background-size: 80% 80%;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
+  font-size: 12px;
+  padding: 0px;
+  font-weight: bold;
+  padding-left: 12px;
+  padding-right: 12px;
 }

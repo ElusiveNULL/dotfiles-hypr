@@ -1,0 +1,10 @@
+#!/bin/bash
+# Script author: noahpolimon
+
+ACTIVE=$(hyprctl activewindow -j | jq -r '.title')
+
+if [[ "$ACTIVE" == "null" ]] || [[ "$ACTIVE" == "" ]]; then
+	echo "$(whoami)@$HOST"
+else
+	echo ${ACTIVE}
+fi

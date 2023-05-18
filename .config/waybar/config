@@ -1,7 +1,7 @@
 {
-    "layer": "bottom", // Waybar at top layer
+    "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 50, // Waybar height (to be removed for auto height)
+    "height": 65, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 5, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -10,26 +10,20 @@
     "margin-bottom":-11,
     //"margin-top":5,
     "modules-left": ["wlr/workspaces"],
-    "modules-right": ["pulseaudio","battery","cpu","clock"],
-    "modules-center": [""],
+    "modules-right": ["pulseaudio","battery","cpu","memory","clock"],
+    // "modules-center": ["custom/activewindow"],
     // Modules configuration
 
-    // custom modules ////////////////
-    "custom/ss":{
-        "format":"{}",
-        "exec":"~/.config/hypr/scripts/expand ss-icon",
-        "on-click": "~/.config/hypr/scripts/screenshot"
-    },
-    "custom/cycle_wall":{
-        "format":"{}",
-        "exec": "~/.config/hypr/scripts/expand wall",
-        // "interval": 1,
-        "on-click": "~/.config/hypr/scripts/expand cycle"
-    },
-
     "hyprland/window": {
-    	"format": "{}",
-    	"separate-outputs": false
+    	// "format": "{}",
+    	"all-outputs": true
+    },
+    "custom/activewindow": {
+        "tooltip": false,
+        "format": "{}",
+        "exec": "sh ~/.config/hypr/scripts/active-window",
+        "interval": 1,
+        "max-length": 50
     },
     // "custom/waybar-mpris": {
     //     "return-type": "json",
@@ -111,10 +105,10 @@
     },
     "cpu": {
         "interval":1,
-        "format": " {usage}%",
+        "format": "  {usage}",
     },
     "memory": {
-        "format": "{}% "
+        "format": "  {}"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -133,9 +127,9 @@
             "warning": 50,
             "critical": 10
         },
-        "format": "{icon}",
+        "format": "{icon} {capacity}",
         "format-charging": "",
-        "format-plugged": "",
+        "format-plugged": "{icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
