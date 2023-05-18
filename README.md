@@ -16,6 +16,4 @@ Required fonts: Cantarell, Font Awesome, Iosevka Nerd Font
 
 ### Credits
 
-https://github.com/linuxmobile/hyprland-dots (Wallpaper)
-
 https://github.com/flick0/dotfiles/tree/aurora/config (Scripts for Hyprland)
