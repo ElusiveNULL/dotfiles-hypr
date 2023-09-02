@@ -14,5 +14,5 @@ if [ $index -ge ${#files[@]} ]; then
 fi
 echo $index > $TEMP
 swww init
-swww img "${files[$index]}" --transition-type grow --transition-pos 1920,1080 --transition-duration 3
+swww img "${files[$index]}" --transition-type wipe --transition-pos 1920,1080 --transition-duration 2.8
 sleep 0.1
