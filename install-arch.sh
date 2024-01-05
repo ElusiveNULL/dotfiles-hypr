@@ -25,10 +25,11 @@ install_aur () {
 
 # Install dependencies
 echo ""
-sudo pacman -S wezterm firefox ttf-iosevka-nerd base-devel sddm dunst ttf-font-awesome cantarell-fonts pulseaudio-alsa pavucontrol hyprland waybar wofi --needed
+sudo pacman -S firefox ttf-iosevka-nerd base-devel sddm dunst ttf-font-awesome cantarell-fonts pulseaudio-alsa pavucontrol hyprland waybar wofi --needed
 sudo systemctl enable sddm
 
 install_aur swww
+install_aur wezterm-git
 install_aur swaylock-effects-git
 
 # Finish
