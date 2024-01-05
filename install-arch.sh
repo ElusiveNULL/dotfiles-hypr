@@ -24,24 +24,11 @@ install_aur () {
 }
 
 # Install dependencies
-sudo pacman -S wezterm firefox ttf-iosevka-nerd base-devel sddm dunst ttf-font-awesome cantarell-fonts pulseaudio-alsa pavucontrol swaylockd --needed
+echo ""
+sudo pacman -S wezterm firefox ttf-iosevka-nerd base-devel sddm dunst ttf-font-awesome cantarell-fonts pulseaudio-alsa pavucontrol hyprland waybar wofi --needed
 sudo systemctl enable sddm
 
-# Install AUR packages
-while true; do
-read -p "Are you using Nvidia? (y/n) " yn
-case $yn in
-	y ) install_aur hyprland-nvidia-git;
-		break;;
-	n ) install_aur hyprland-git;
-		break;;
-	* ) echo "Invalid response.";;
-esac
-done
-
 install_aur swww
-install_aur waybar-hyprland-git
-install_aur wofi
 install_aur swaylock-effects-git
 
 # Finish
