@@ -105,7 +105,7 @@
     },
     "cpu": {
         "interval":2,
-        "format": "  {usage}",
+        "format": "   {usage}",
     },
     "memory": {
         "format": "  {}"
@@ -132,7 +132,7 @@
         "format-plugged": "{icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["󰁹"]
     },
     "battery#bat2": {
         "bat": "BAT2"
